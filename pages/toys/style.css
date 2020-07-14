@@ -1,0 +1,27 @@
+/* "Filters" */
+
+.filters {
+  background-color: rgba(125, 151, 218, 0.2);
+}
+
+.form-filters {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 42px 195px 42px 0px;
+  margin-left: -10px;
+}
+
+.form-group {
+  border: none;
+}
+
+.form-group-title {
+  font-family: "Open Sans Bold";
+}
+
+.form-group-label {
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 22px;
+}
