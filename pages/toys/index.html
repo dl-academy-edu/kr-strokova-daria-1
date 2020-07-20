@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="/normalize.css" />
     <link rel="stylesheet" href="/common.css" />
     <link rel="stylesheet" href="./style.css" />
-    <title>Contact Us</title>
+    <title>Design Life Kids</title>
   </head>
   <body>
-    <header class="header">
-      <a class="logo-link" href="#">
+    <header class="header container">
+      <a class="logo-link" href="/index.html">
         <svg
           width="100"
           height="52"
@@ -37,15 +37,28 @@
       </a>
       <nav class="header-nav">
         <ul class="header-list">
-          <li><a class="header-nav-link" href="#">Blog</a></li>
-          <li><a class="header-nav-link" href="#">Catalog</a></li>
-          <li><a class="header-nav-link" href="#">About Us</a></li>
+          <li class="header-item">
+            <a class="header-nav-link" href="#">Blog</a>
+          </li>
+          <li class="header-item">
+            <a class="header-nav-link" href="#">Catalog</a>
+          </li>
+          <li class="header-item">
+            <a class="header-nav-link" href="#">About Us</a>
+          </li>
         </ul>
       </nav>
-      <form class="search-form">
-        <input type="text" placeholder="What are you looking for?" />
-        <button type="submit">
+      <!-- <form class="search-form">
+        <input
+          class="search-form-input"
+          type="text"
+          placeholder="What are you looking for?"
+        />
+      </form> -->
+      <div class="search-contact">
+        <button class="search-form-button" type="submit">
           <svg
+            class="search-img"
             width="18"
             height="18"
             viewBox="0 0 18 18"
@@ -58,17 +71,23 @@
             />
           </svg>
         </button>
-      </form>
-      <ul class="header-list">
-        <li><a class="header-contact" href="#">Contact Us</a></li>
-      </ul>
+        <ul class="header-list contact">
+          <li class="header-item contact">
+            <a
+              class="header-nav-link contact"
+              href="/pages/contact-us/index.html"
+              >Contact&nbsp;&nbsp;Us</a
+            >
+          </li>
+        </ul>
+      </div>
     </header>
     <main>
-      <section class="contact-us">
-        <h1 class="contact-us-title page-title">Contact Us</h1>
+      <section class="title-breadcrumbs container">
+        <h1 class="toys-title page-title">TOY FOR KIDS</h1>
         <div class="breadcrumbs">
           <ul class="breadcrumbs-list">
-            <li>
+            <li class="breadcrumbs-item">
               <a class="breadcrumbs-link" href="#">Home</a>
               <span class="breadcrumbs-delimiter">
                 <svg
@@ -87,54 +106,300 @@
                 </svg>
               </span>
             </li>
-            <li class="active">Contact Us</li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="/pages/catalog/index.html"
+                >Catalog</a
+              >
+              <span class="breadcrumbs-delimiter">
+                <svg
+                  width="8"
+                  height="12"
+                  viewBox="0 0 8 12"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M1.31229 0L0 1.17735L5.37541 6L0 10.8227L1.31229 12L8 6L1.31229 0Z"
+                    fill="#1E0606"
+                  />
+                </svg>
+              </span>
+            </li>
+            <li class="breadcrumbs-active">Toys</li>
           </ul>
         </div>
-        <form class="contact-us-form" action="/pages/contact-us/index.html">
-          <label class="form-label">
-            Name
-            <input
-              class="input-text"
-              type="text"
-              name="name"
-              placeholder="Ivan Ivanov"
-            />
-          </label>
-          <label class="form-label">
-            Phone
-            <input class="input-text" type="tel" name="phone" />
-          </label>
-          <label class="form-label">
-            Email
-            <input class="input-text" type="email" name="email" />
-          </label>
-          <label class="input-text"
-            >Message
-            <textarea name="message" cols="30" rows="10"></textarea>
-          </label>
-          <fieldset>
-            <label class="form-label">
-              <input
-                class="input-checkbox"
-                type="checkbox"
-                name="consent"
-                value="yes"
+      </section>
+      <section class="filters">
+        <div class="container">
+          <form class="form-filters" action="/pages/toys/index.html">
+            <fieldset class="form-group">
+              <legend class="form-group-title">Cost</legend>
+              <label class="form-group-label">
+                <span class="cost-value form-group-label">0</span>
+                <input
+                  class="form-range"
+                  type="range"
+                  min="0"
+                  max="500"
+                  step="1"
+                  value="100"
+                  name="cost"
+                />
+                <span class="cost-value form-group-label">500</span>
+              </label>
+            </fieldset>
+            <fieldset class="form-group">
+              <legend class="form-group-title">Color</legend>
+              <ul class="form-checkbox-list">
+                <li class="form-checkbox-item">
+                  <label class="form-group-label">
+                    <input
+                      class="color-input"
+                      type="checkbox"
+                      name="color"
+                      value="black"
+                    />
+                    Black
+                  </label>
+                </li>
+                <li class="form-checkbox-item">
+                  <label class="form-group-label">
+                    <input
+                      class="color-input"
+                      type="checkbox"
+                      name="color"
+                      value="blue"
+                    />
+                    Blue
+                  </label>
+                </li>
+                <li class="form-checkbox-item">
+                  <label class="form-group-label">
+                    <input
+                      class="color-input"
+                      type="checkbox"
+                      name="color"
+                      value="green"
+                    />
+                    Green
+                  </label>
+                </li>
+                <li class="form-checkbox-item">
+                  <label class="form-group-label">
+                    <input
+                      class="color-input"
+                      type="checkbox"
+                      name="color"
+                      value="white"
+                    />
+                    White
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-group">
+              <legend class="form-group-title">Delivery</legend>
+              <ul class="form-radio-list">
+                <li class="form-radio-item">
+                  <label class="form-group-label">
+                    <input
+                      class="delivery-input"
+                      type="radio"
+                      name="shipping"
+                      value="free"
+                    />
+                    Free Shipping
+                  </label>
+                </li>
+                <li class="form-radio-item">
+                  <label class="form-group-label">
+                    <input
+                      class="delivery-input"
+                      type="radio"
+                      name="shipping"
+                      value="fast"
+                    />
+                    Fast Shipping
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form-group">
+              <legend class="form-group-title">Amount</legend>
+              <ul class="form-radio-list">
+                <li class="form-radio-item">
+                  <label class="form-group-label">
+                    <input
+                      class="amount-input"
+                      type="radio"
+                      name="amount"
+                      value="0-5"
+                    />0-5
+                  </label>
+                </li>
+                <li class="form-radio-item">
+                  <label>
+                    <input
+                      class="amount-input"
+                      type="radio"
+                      name="amount"
+                      value="10-20"
+                    />10-20
+                  </label>
+                </li>
+                <li class="form-radio-item">
+                  <label>
+                    <input
+                      class="amount-input"
+                      type="radio"
+                      name="amount"
+                      value="20-50"
+                    />20-50
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </form>
+          <button class="button" type="submit">APPLY</button>
+        </div>
+      </section>
+      <section class="results">
+        <ul class="results-list">
+          <li class="results-item">
+            <a class="results-link" href="#">
+              <img
+                class="results-img"
+                src="/images/shark.png"
+                width="380"
+                height="385"
+                alt="SHARKY BEAN BAG CHAIR COVER"
               />
-              By clicking on the button, you consent to the processing of your
-              personal data
-            </label>
-          </fieldset>
-          <button class="button" type="submit">SUBMIT</button>
-        </form>
-        <p class="contact-us-text section-text">
-          Our support team are on-hand to assist with any issues you are
-          experiencing.
-        </p>
-        <p class="contact-us-text section-text">
-          Please use the form to contact us with your needs. Send us a message
-          and we'll respond as soon as possible.
-        </p>
-        <p class="contact-us-help">An expert is waiting to help you!</p>
+              <h3 class="img-heading">SHARKY BEAN BAG CHAIR COVER</h3>
+              <span class="price">$60.00 USD</span>
+            </a>
+          </li>
+          <li class="results-item">
+            <a class="results-link" href="#">
+              <img
+                class="results-img"
+                src="/images/frames.png"
+                width="380"
+                height="385"
+                alt="BRASS DECO FRAMES"
+              />
+              <h3 class="img-heading">BRASS DECO FRAMES</h3>
+              <span class="price">$66.00 USD</span>
+            </a>
+          </li>
+          <li class="results-item">
+            <a class="results-link" href="#">
+              <img
+                class="results-img"
+                src="/images/apron.png"
+                width="380"
+                height="385"
+                alt="CIBO FULL APRON"
+              />
+              <h3 class="img-heading">CIBO FULL APRON</h3>
+              <span class="price">$60.00 USD</span>
+            </a>
+          </li>
+          <li class="results-item">
+            <a class="results-link" href="#">
+              <img
+                class="results-img"
+                src="/images/gumball-machine.png"
+                width="380"
+                height="385"
+                alt="GATCHA GATCHA GUMBALL MACHINE"
+              />
+              <h3 class="img-heading">GATCHA GATCHA GUMBALL MACHINE</h3>
+              <span class="price">$56.00 USD</span>
+            </a>
+          </li>
+          <li class="results-item">
+            <a class="results-link" href="#">
+              <img
+                class="results-img"
+                src="/images/candle.png"
+                width="380"
+                height="385"
+                alt="CHRISTMAS ADVENT SCENTED CANDLE"
+              />
+              <h3 class="img-heading">CHRISTMAS ADVENT SCENTED CANDLE</h3>
+              <span class="price">$29.00 USD</span>
+            </a>
+          </li>
+          <li class="results-item">
+            <a class="results-link" href="#">
+              <img
+                class="results-img"
+                src="/images/light.png"
+                width="380"
+                height="385"
+                alt="TANGLE SPINNING TEA LIGHT"
+              />
+              <h3 class="img-heading">TANGLE SPINNING TEA LIGHT</h3>
+              <span class="price">$56.00 USD</span>
+            </a>
+          </li>
+        </ul>
+        <div class="pages-switch">
+          <button class="switch">
+            <svg
+              width="18"
+              height="30"
+              viewBox="0 0 18 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M16 2L3 15L16 28"
+                stroke="#1E0606"
+                stroke-opacity="0.12"
+                stroke-width="4"
+              />
+            </svg>
+          </button>
+          <ul class="pages-list">
+            <li class="page-item">
+              <a class="page-link" href="#">1</a>
+            </li>
+          </ul>
+          <ul class="pages-list">
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+          </ul>
+          <ul class="pages-list">
+            <li class="page-item">
+              <a class="page-link" href="#">3</a>
+            </li>
+          </ul>
+          <ul class="pages-list">
+            <li class="page-item">
+              <a class="page-link" href="#">4</a>
+            </li>
+          </ul>
+          <button class="switch">
+            <svg
+              width="18"
+              height="30"
+              viewBox="0 0 18 30"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M2 2L15 15L2 28"
+                stroke="#1E0606"
+                stroke-opacity="0.12"
+                stroke-width="4"
+              />
+            </svg>
+          </button>
+        </div>
       </section>
     </main>
     <footer class="footer">
@@ -152,16 +417,24 @@
       <section class="footer-customer">
         <h3 class="footer-title">Customer Information</h3>
         <ul class="footer-list">
-          <li><a class="footer-link" href="#">Contact Us</a></li>
-          <li><a class="footer-link" href="#">Sale Exclusions</a></li>
+          <li>
+            <a class="footer-link" href="#">Contact Us</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Sale Exclusions</a>
+          </li>
           <li>
             <a class="footer-link" href="#">Shipping & Returns</a>
           </li>
           <li>
             <a class="footer-link" href="#">Terms & Conditions</a>
           </li>
-          <li><a class="footer-link" href="#">Privacy Policy</a></li>
-          <li><a class="footer-link" href="#">Search</a></li>
+          <li>
+            <a class="footer-link" href="#">Privacy Policy</a>
+          </li>
+          <li>
+            <a class="footer-link" href="#">Search</a>
+          </li>
         </ul>
       </section>
       <section class="footer-connect">
